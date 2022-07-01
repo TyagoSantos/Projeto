@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>500</width>
+    <width>581</width>
     <height>536</height>
    </rect>
   </property>
@@ -53,26 +53,10 @@ background-color: rgb(255, 255, 255);</string>
      <string>Enviar </string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>450</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Consultar</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>440</x>
       <y>450</y>
       <width>75</width>
       <height>23</height>
@@ -88,9 +72,9 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>90</y>
-      <width>71</width>
+      <width>101</width>
       <height>16</height>
      </rect>
     </property>
@@ -100,14 +84,14 @@ background-color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="text">
-     <string>Defeito:</string>
+     <string>Novo Defeito:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>160</y>
+      <x>50</x>
+      <y>230</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -124,9 +108,9 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>120</x>
       <y>90</y>
-      <width>381</width>
+      <width>421</width>
       <height>20</height>
      </rect>
     </property>
@@ -137,8 +121,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>160</y>
+      <x>120</x>
+      <y>230</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -147,16 +131,22 @@ background-color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>500</width>
-     <height>21</height>
-    </rect>
-   </property>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>450</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Consulta</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
