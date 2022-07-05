@@ -33,7 +33,7 @@ background-color: rgb(83, 91, 255);</string>
      </font>
     </property>
     <property name="text">
-     <string>Cadastro de Defeitos </string>
+     <string>Controle PQG</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -46,7 +46,7 @@ background-color: rgb(83, 91, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true"> border-radius: 4px;
 background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
@@ -63,7 +63,8 @@ background-color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">border-radius: 4px;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Finalizar </string>
@@ -115,7 +116,8 @@ background-color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 4px;</string>
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox">
@@ -128,7 +130,8 @@ background-color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">border-radius: 4px;
+background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -141,7 +144,8 @@ background-color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 4px;</string>
     </property>
     <property name="text">
      <string>Consulta</string>
