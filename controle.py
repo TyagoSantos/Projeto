@@ -29,6 +29,7 @@ def menu():
         cursor = banco.cursor()
         cursor.execute("CREATE TABLE IF NOT EXISTS Defeitos (Defeito text,Modelo text,Data text, Hora text)")
         cursor.execute("INSERT INTO Defeitos VALUES('"+defeito+"','"+modelo+"','"+data+"','"+hora+"')")
+        banco.commit()
         banco.close()
         qt.lineEdit.setText("")
 
