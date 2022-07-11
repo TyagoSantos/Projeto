@@ -39,7 +39,7 @@ background-color: rgb(83, 91, 255);</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>110</x>
       <y>450</y>
       <width>75</width>
       <height>23</height>
@@ -51,23 +51,6 @@ background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Enviar </string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>450</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 4px;
-background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Finalizar </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -137,7 +120,7 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>390</x>
       <y>450</y>
       <width>75</width>
       <height>23</height>
