@@ -5,6 +5,8 @@ from datetime import datetime
 import sqlite3
 from reportlab.pdfgen import canvas 
 import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from email.message import EmailMessage
 from email.mime.base import MIMEBase
 from email import encoders
@@ -15,11 +17,20 @@ def email():
     login = "tfs16@discente.ifpe.edu.br"
     senha = "Sport@0408"
     
-    #serv = smtplib.SMTP(host,porta)
-    #serv.ehlo()
-    #serv.starttls()
-    #$serv.login(login,senha)
-    
+    server = smtplib.SMTP(host, porta)
+    server.ehlo()
+    server.starttls()
+    server.login(login,senha)
+
+    attachment = open(r"C:\Users\tyago\OneDrive\Documentos\Pojeto\Relatório_PDF")
+    att = MIMEBase('application', 'pdf')
+    att.set_payload((attachment).read())
+    encoders.encode_base64(att)
+    att.add_header('Content-Disposition', "attachment; filename= Relatório_PDF")
+    attachment.close()
+   
+
+
     email = qt_2.lineEdit.text()
     qt_2.lineEdit.setText("")
     if email == "":
@@ -27,15 +38,16 @@ def email():
     else:
         QMessageBox.about(qt_2, "alerta","Enviado")
 
-    msg = EmailMessage()
-    msg['Subject'] = 'Relatório'
+    corpo = "Segue Relatório"
+    msg = MIMEMultipart()
     msg['From'] = 'tfs16@discente.ifpe.edu.br'
     msg['To'] = email
-    msg.set_content("Segue em anexo o Relatótio")
-    
-    with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
-        smtp.login(login,senha)
-        smtp.send_message(msg,"Relatório_PDF")
+    msg['Subject'] = "Relatório de Defeitos"
+    msg.attach(MIMEText(corpo,'plain'))
+    msg.attach(att)
+
+    server.sendmail(login,email,msg.as_string())
+    server.quit
    
 
 def relatorio_pdf():
@@ -81,6 +93,11 @@ def menu_consulta():
 
 def menu():
     defeito = qt.lineEdit.text()
+    if defeito == "":
+        QMessageBox.about(qt, "alerta", "Informe o defeito")
+    else:
+        QMessageBox.about(qt, "alerta","Enviado")
+
     modelo = qt.comboBox.currentText()
     data = datetime.today().strftime('%d-%m-%Y')
     hora = datetime.today().strftime('%H:%M')
