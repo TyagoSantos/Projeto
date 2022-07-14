@@ -15,7 +15,7 @@ def email():
     host = "smtp.gmail.com"
     porta = "587"
     login = "tfs16@discente.ifpe.edu.br"
-    senha = "Sport@0408"
+    senha = "xxxx"
     
     server = smtplib.SMTP(host, porta)
     server.ehlo()
